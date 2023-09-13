@@ -17,6 +17,13 @@ body {
     margin: 0;
 }
 
+main{
+    background-image: url(https://pilbox.themuse.com/image.jpg?filter=antialias&h=385&opt=1&pos=top-left&prog=1&q=keep&url=https%3A%2F%2Fcms-assets.themuse.com%2Fmedia%2Flead%2F01212022-1047259374-coding-classes_scanrail.jpg&w=700);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
 h1, h2, h3 {
     font-family: "Times New Roman", Times, serif;
 }
@@ -85,7 +92,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
 }
 
 .piePagina {
@@ -97,17 +103,6 @@ footer{
     align-items: center;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #333;
-        color: #fff;
-    }
-
-    nav, footer{
-        background-color: #0056b3;
-        border: none;
-    }
-}
 
 /* Estilos solo para index ------------------------------------------------------------------------------------------------*/
 #informacion-personal {
@@ -116,6 +111,15 @@ footer{
     justify-content: center;
     background-image: url(https://accionpoint.com/wp-content/uploads/lowcode-1150x430.jpg);
     background-size: cover;
+}
+
+#sobre-mi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: url(./assets/360_F_94882306_gdTjxS01ptuEjEy0GQVZAhZNjiWsMfpt.jpg);
+    background-size: cover;
+    
 }
 
 .contenedor-imagen {
@@ -142,3 +146,73 @@ footer{
 }
 
 /* Estilos solo para experiencia ------------------------------------------------------------------------------------------------*/
+#section-experiencia{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-experiencia{
+    margin: 20px;
+}
+
+.container-experiencia h2{
+    margin-bottom: 20px;
+}
+
+#experiencia-laboral p{
+    width: 100%;
+}
+
+/* Estilos solo para estudios ------------------------------------------------------------------------------------------------*/
+#main-estudios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-estudios{
+    max-width: 70%;
+}
+
+/* Estilos solo para competencias ------------------------------------------------------------------------------------------------*/
+.icon-container {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-container img {
+    width: 100px; /* Establece un ancho fijo para todas las imágenes */
+    height: 100px; /* Establece una altura fija para todas las imágenes */
+    margin: 10px; /* Agrega margen entre los iconos (ajusta según tus preferencias) */
+}
+
+
+
+/*Querys ---------------------------------------------------------------------------------------------------------------------------*/
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #fff;
+    }
+
+    a{
+        color: #fff;
+    }
+
+    nav, footer{
+        background-color: #0056b3;
+        border: none;
+    }
+
+    #informacion-personal {
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+
+    #sobre-mi{
+        background-image: linear-gradient( 86.3deg,  rgba(0,119,182,1) 3.6%, rgba(8,24,68,1) 87.6% );
+    }
+}
+
