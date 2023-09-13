@@ -1,0 +1,144 @@
+/* Estilos globales  ------------------------------------------------------------------------------------------------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #c5c5c5;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    text-align: center;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+/* Estilos globales - Barra de navegacion*/
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    font-family: Calibri, sans-serif;
+}
+
+li {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    background-color: rgb(16, 154, 159);
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos globales - Footer*/
+footer{
+    display: block;
+    height: 60px;
+    padding: 14px;
+    background-color: rgba(16, 154, 159);;
+    color: #fff;
+    text-align: center;
+    border-style: none;
+    
+
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.piePagina {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #fff;
+    }
+
+    nav, footer{
+        background-color: #0056b3;
+        border: none;
+    }
+}
+
+/* Estilos solo para index ------------------------------------------------------------------------------------------------*/
+#informacion-personal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://accionpoint.com/wp-content/uploads/lowcode-1150x430.jpg);
+    background-size: cover;
+}
+
+.contenedor-imagen {
+    margin-right: 20px;
+}
+
+#fotoCv {
+    max-width: 100%;
+    max-height: 200px; 
+    height: auto; 
+    border-radius: 15px;
+    align-self: flex-start;
+    margin-right: 50px;
+}
+
+.contenedor-texto {
+    text-align: center;
+    background-color: rgba(174, 174, 174, 0.851);
+    border-radius: 15px;
+}
+
+.contenedor-texto p{
+    padding: 5px;
+}
+
+/* Estilos solo para experiencia ------------------------------------------------------------------------------------------------*/
